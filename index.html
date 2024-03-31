@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+
+        <div class="container">
+
+            <!-- <div class="navbar">
+              
+                 <div class="logo-container">
+                 <div class="logo-text">Shakti Singh</div>
+                </div>
+
+                <div class="nav-items">
+                 <div><a href="#projects">Projects</a></div>
+                 <div><a href="#skills">Skills</a></div>
+                 <div><a href="#contactme">Contact Me</a></div>
+                </div>
+            </div> -->
+            <div class="navbar">
+                <div class="logo-container">
+                    <div class="logo-text">Shakti Singh</div>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="nav-items">
+                    <div><a href="#projects">Projects</a></div>
+                    <div><a href="#skills">Skills</a></div>
+                    <div><a href="#contactme">Contact Me</a></div>
+                </div>
+            </div>
+    
+            
+        </div>
+
+
+            <div class="hero-section">
+                <!-- <div class="faded-text">Shakti Singh</div> -->
+                <div class="hero-left">
+                   <div class="hero-section-heading">Hi! Shakti Singh</div>
+                   <div class="hero-section-sub">
+                    I am a web developer
+                   </div>
+    
+                   <div class="hero-section-desciption">
+                    I'm a web developer and here is my portfolio website . Here you'll learn about my journey as a software developer.
+                   </div>
+                   <div class="btn-pink" id="btn">Hire me</div>
+    
+                </div>
+    
+                <div class="hero-right">
+                    <div class="absolute icons icon-dots">
+                      <img src="./asset/dots.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-cube">
+                       <img src="./asset/cube.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-circle">
+                        <img src="./asset/circle.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-zigzag">
+                        <img src="./asset/zigzags.png" alt="">
+                    </div>
+                    <div class="absolute icons icon-plus">
+                        <img src="./asset/plus.png" alt="">
+                    </div>
+                    <div class="user-image">
+                        <img src="./asset/shakti-removebg-preview.jpg" alt="">
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="project-section">
+            <h2 class="page-header">Projects</h2>
+             
+             <div class="project-container">
+
+                <div class="project-card">
+                    <div class="project-content">
+                         
+                        
+                         <h2 class="project-heading">Weather App </h2>
+                         <p class="project-subheading">Real-Time Weather Updates: Our application fetches real-time weather data from trusted sources, ensuring that users receive the latest information .</p>
+                        <div class="btn-grp">
+                         <button class="btn-pink btn-project">Read More</button>
+                       
+                         <a href="https://shaktisingh647.github.io/Weather/" target="_blank">
+                            <i class="fab fa-github icon" title="GitHub Link"></i>
+                        </a>
+                        <a href="https://github.com/shaktisingh647/Weather" target="_blank">
+                            <i class="fas fa-external-link-alt icon" title="Live Link"></i>
+                        </a>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+             </div>
+
+
+
+        </div>
+ 
+        <div id="skills" class="container skills-container">
+           
+           <div class="skill-container-left">
+              <h2 class="skill-heading">
+                <span class="caps">M</span>e and
+                <br/>
+                MyTech Stack
+              </h2>
+              <div class="skill-subHeading">
+                <p>
+                    I am a visionary web developer with a passion for innovation and a mastery of code .
+                    But I'm more than just a developer; I'm a problem-solver, a strategist, and a relentless seeker of optimal solutions . 
+                    My proficiency spans across a spectrum of languages and frameworks, from HTML, CSS, and JavaScript to cutting-edge technologies like React, Node.js, Express.js etc. 
+
+
+                </p>
+              </div>
+
+
+           </div>
+
+           <div class="skill-container-right">
+                            <img class="skills-logo" src="./asset/HTML.png" alt="">
+                            <img class="skills-logo" src="./asset/CSS.png" alt="">
+                            <img class="skills-logo" src="./asset/Express.png" alt="">
+                            <img class="skills-logo" src="./asset/NextJsCircle.png" alt="">
+                            <img class="skills-logo" src="./asset/Tailwind.png" alt="">
+                            <img class="skills-logo" src="./asset/React.png" alt="">
+                            
+                            
+           </div>
+
+        </div>
+
+        <footer>
+            <div id="contactme" class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-faded-text">
+                        Shakti Singh
+                    </div>
+                    <div class="link-wrapper">
+                        <div>
+                            <a href="#projects">Projects</a>
+                        </div>
+                        <div>
+                            <a href="#skills">Skills</a>
+                        </div>
+                    </div>
+                    
+                    <div class="icon-wrapper">
+                        <a href="https://www.linkedin.com/in/shakti-singh-88a14a245" target="_blank"><i class="fab fa-linkedin icon"></i> </a>
+                        <a href="https://github.com/shaktisingh647" target="_blank"><i class="fab fa-github icon"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $('.nav-items').toggleClass('active'); // Toggle active class for nav items
+            });
+        });
+    </script>
+</body>
+</html>
